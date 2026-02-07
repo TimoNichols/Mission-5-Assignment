@@ -1,8 +1,36 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+@{
+    ViewData["Title"] = "Home";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Welcome to My Fortnite Fan Site! <img src="~/images/TitleImageFortnite.png" alt="Fortnite" class="title-image" /></h1>
+    <p class="lead">Discover my passion for the world's most popular battle royale game</p>
+</div>
+
+<div class="row mt-5 align-items-center">
+    <div class="col-md-6">
+        <h2>Exciting Battle Style</h2>
+        <p>
+            I really enjoy Fortnite for it's unique style and building. Building in Fortnite is really simple at its base but the more you learn the more exciting it becomes. I have been playing Fortnite since 2017 and it has been my favorite game since. Building your own cover and being able to edit the pieces you build really intruiged me when i started playing.
+        </p>
+    </div>
+    <div class="col-md-6">
+        <img src="~/images/Fortnite_Build.png" alt="Fortnite Building" class="img-fluid rounded shadow hobby-image" />
+    </div>
+</div>
+
+<div class="row mt-5 align-items-center">
+    <div class="col-md-6 order-md-2">
+        <h2>Something for Everyone</h2>
+        <p>
+            You can play Fortnite with friends super casually and have a great time or you can try hard and sweat in ranked mode. It has the best skins for your in game character of any game with what seems to be endless collaborations with different brands and IPs. Fortnite while complex also has different modes and maps for people of different skill levels and play styles including, No Build Modes, Fast Respawn Modes, and other community maps.
+        </p>
+    </div>
+    <div class="col-md-6 order-md-1">
+        <img src="~/images/FortniteCollabs.png" alt="Fortnite Collaborations" class="img-fluid rounded shadow hobby-image" />
+    </div>
+</div>
+
+<div class="mt-5 text-center">
+    <a asp-controller="Home" asp-action="Calculator" class="btn btn-primary btn-lg">Calculate Coaching Rates</a>
 </div>

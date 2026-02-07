@@ -1,31 +1,131 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    background-color: #f8f9fa;
 }
 
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
+/* Navbar styling */
+.navbar {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%) !important;
 }
 
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
+.navbar-brand {
+    font-weight: bold;
+    color: #ffd700 !important;
+}
+
+.navbar-logo {
+    height: 40px;
+    width: auto;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffd700 !important;
+}
+
+/* Footer styling */
+footer {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+footer a {
+    color: #ffd700;
+}
+
+/* Hobby image styling */
+.hobby-image {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Title image styling */
+.title-image {
+    height: 60px;
+    width: auto;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+/* Heading styling */
+h1.display-4 {
+    color: #1a1a2e;
+    font-weight: bold;
+}
+
+h2 {
+    color: #16213e;
+    border-bottom: 3px solid #ffd700;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #5865f2;
+    border-color: #5865f2;
+}
+
+.btn-primary:hover {
+    background-color: #4752c4;
+    border-color: #4752c4;
+}
+
+/* Card styling */
+.card {
+    border: none;
+    border-radius: 15px;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+/* Form control styling */
+.form-control:read-only {
+    background-color: #e9ecef;
+}
+
+#totalCost {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #198754;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .hobby-image {
+        max-height: 200px;
+    }
 }
